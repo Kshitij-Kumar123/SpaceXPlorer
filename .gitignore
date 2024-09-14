@@ -1,0 +1,44 @@
+# Gradle files
+android-app/.gradle/
+android-app/build/
+
+# Local configuration file (sdk path, etc)
+android-app/local.properties
+
+# Log/OS Files
+android-app/*.log
+
+# Android Studio generated files and folders
+android-app/captures/
+android-app/.externalNativeBuild/
+android-app/.cxx/
+android-app/*.apk
+android-app/output.json
+
+# IntelliJ
+android-app/*.iml
+android-app/.idea/
+android-app/misc.xml
+android-app/deploymentTargetDropDown.xml
+android-app/render.experimental.xml
+
+# Keystore files
+android-app/*.jks
+android-app/*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+android-app/google-services.json
+
+# Android Profiling
+android-app/*.hprof
+
+
+__pycache__/
+.env
+.idea/
+
+gendocs.html
+spec.yaml
+
+# cache output
+/backend/data_microservice/cached_data

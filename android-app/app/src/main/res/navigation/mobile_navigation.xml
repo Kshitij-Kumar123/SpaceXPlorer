@@ -1,0 +1,38 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_newsfeed">
+
+    <fragment
+        android:id="@+id/navigation_newsfeed"
+        android:name="com.ece452.spacexplorer.ui.newsfeed.NewsfeedFragment"
+        android:label="@string/title_newsfeed"
+        tools:layout="@layout/fragment_newsfeed" >
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_discover"
+        android:name="com.ece452.spacexplorer.ui.discover.DiscoverFragment"
+        android:label="@string/title_discover"
+        tools:layout="@layout/fragment_discover" />
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.ece452.spacexplorer.ui.map.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_events"
+        android:name="com.ece452.spacexplorer.ui.events.EventsFragment"
+        android:label="@string/title_events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.ece452.spacexplorer.ui.profile.ProfileFragment"
+        android:label="@string/title_profile_header"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

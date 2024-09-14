@@ -1,0 +1,4 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/search_view_border" />
+    <item android:drawable="@drawable/ic_arrow_drop_down" android:right="8dp" android:gravity="right|center_vertical"/>
+</layer-list>

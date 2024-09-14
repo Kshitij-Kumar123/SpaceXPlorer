@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Space XPlorer</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_newsfeed">Newsfeed</string>
+    <string name="title_discover">Discover</string>
+    <string name="title_map">Map</string>
+    <string name="title_events">Events</string>
+    <string name="password"><u>Password</u></string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="email"><u>Email</u></string>
+    <string name="phone"><u>Phone</u></string>
+    <string name="phone_number">Phone Number</string>
+    <string name="username"><u>Username</u></string>
+    <string name="register">Register</string>
+    <string name="gettingstarted">Getting Started</string>
+    <string name="next">Next</string>
+    <string name="no_events">No Events Found!</string>
+    <string name="search">Search…</string>
+
+    <!--Getting Started-->
+    <string name="space">Space</string>
+    <string name="explorer">XPlorer</string>
+
+    <!--login strings-->
+    <string name="subheading_login">Please sign in to continue.</string>
+    <string name="login_hint">Username/email</string>
+    <string name="no_account">Don\'t have an account? </string>
+
+    <!--register strings-->
+    <string name="yes_account">Have an account? </string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <!--Welcome Page-->
+    <string name="welcome">Welcome!</string>
+    <string name="select_topics">Select some topics to get started:</string>
+    <string name="planets">Planets</string>
+    <string name="eclipses">Eclipses</string>
+    <string name="constellations">Constellations</string>
+    <string name="northern_lights">Northern Lights (Aurora Borealis)</string>
+    <string name="comets">Comets</string>
+    <string name="asteroids">Asteroids</string>
+    <string name="black_holes">Black Holes</string>
+    <string name="scroll_view_text">Topics Toggle Buttons</string>
+
+    <!--my profile strings-->
+    <string name="title_profile_header">My Profile</string>
+    <string name="description_profile_img">Profile Image</string>
+    <string name="description_edit_password">Edit Password</string>
+    <string name="description_edit_phone">Edit Phone Number</string>
+    <string name="description_edit_email">Edit Email</string>
+    <string name="description_edit_username">Edit Username</string>
+    <string name="hint_phone_input">123–456–7890</string>
+    <string name="hint_email">example@gmail.com</string>
+    <string name="hint_password">password</string>
+    <string name="hind_username">User123</string>
+    <string name="edit_topics">Change Selected Topics</string>
+    <string name="change_password">Change Password</string>
+
+    <!--discover page strings-->
+    <string name="event_scrolling">events scrolling</string>
+
+    <!--newsfeed card strings -->
+    <string name="news_image_description">News image</string>
+    <string name="heading">Heading</string>
+    <string name="description">Description</string>
+    <string name="zero">0</string>
+    <string name="create_comment">Create a comment</string>
+    <string name="send_comment">Send comment</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+
+
+    <!-- event cards ui strings -->
+    <string name="mission_name">Mission Name</string>
+    <string name="pad_name">Pad Name</string>"
+    <string name="no_subscribed_events">No subscribed events found!</string>
+    <string name="events_scrolling">events scrolling</string>
+    <string name="descr_value">value</string>
+    <string name="descr_type">type</string>
+    <string name="event_title">Title goes here</string>
+    <string name="event_subtitle">Secondary text goes here</string>
+    <string name="event_img_descr">Event image description goes here</string>
+    <string name="send_img_btn">Send Comment button</string>
+    <string name="collapse_img">Collapse card</string>
+    <string name="placeholder_comment">Here is a placeholder comment</string>
+    <string name="timestamp">Timestamp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_comment">Comments</string>
+    <string name="comment_post_btn">Post</string>
+    <string name="comment_textbox_hint">Add a comment…</string>
+
+    <string name="placeholder_btn_nums">123</string>
+    <string name="placeholder_btn_nums2">123</string>
+
+</resources>

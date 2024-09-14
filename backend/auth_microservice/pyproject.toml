@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "auth_microservice"
+version = "0.1.0"
+description = "Auth Microservice"
+authors = ["Joel Deodhar <jdeodhar@uwaterloo.ca>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+psycopg2-binary = "^2.9.9"
+redis = "^5.0.5"
+python-dotenv = "1.0.1"
+pyyaml = "6.0.1"
+sqlmodel = "0.0.19"
+pandas = "2.2.2"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

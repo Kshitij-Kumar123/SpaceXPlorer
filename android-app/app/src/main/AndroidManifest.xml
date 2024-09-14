@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    Allow internet permissions for API calls-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!--Might need to change to FINE-->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpaceXPlorer"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="35"
+        >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="insert google api key here" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".GettingStartedActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SpaceXPlorer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="@string/register"
+            android:theme="@style/Theme.SpaceXPlorer" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/login"
+            android:theme="@style/Theme.SpaceXPlorer" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

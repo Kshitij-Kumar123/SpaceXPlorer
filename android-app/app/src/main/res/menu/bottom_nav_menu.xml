@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_newsfeed"
+        android:icon="@drawable/ic_newsfeed_black_24dp"
+        android:title="@string/title_newsfeed" />
+
+    <item
+        android:id="@+id/navigation_discover"
+        android:icon="@drawable/ic_discover_black_24dp"
+        android:title="@string/title_discover" />
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_map_black_24dp"
+        android:title="@string/title_map" />
+
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/ic_events_black_24dp"
+        android:title="@string/title_events" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile_black_24dp"
+        android:title="@string/title_profile_header" />
+</menu>

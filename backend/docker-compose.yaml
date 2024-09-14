@@ -1,0 +1,86 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:14-alpine
+    expose:
+      - 5432
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DB=${POSTGRES_DBNAME}
+
+  redis:
+    image: redis:latest
+    expose:
+      - 6379
+
+    ports:
+      - "6379:6379"
+
+  auth_microservice:
+    build:
+      context: ./
+      dockerfile: ./auth_microservice/Dockerfile
+
+    ports:
+      - "8001:8000"
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DBNAME=${POSTGRES_DBNAME}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - GOOGLE_API=${GOOGLE_API}
+      - CACHE=${CACHE}
+    expose:
+      - 8000
+    depends_on:
+      - postgres
+      - redis
+
+  data_microservice:
+    build:
+      context: ./
+      dockerfile: ./data_microservice/Dockerfile
+    ports:
+      - "8002:8000"
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DBNAME=${POSTGRES_DBNAME}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - GOOGLE_API=${GOOGLE_API}
+      - CACHE=${CACHE}
+    expose:
+      - 8000
+    depends_on:
+      - postgres
+      - redis
+
+  user_interactions_microservice:
+    build:
+      context: ./
+      dockerfile: ./user_interactions_microservice/Dockerfile
+    ports:
+      - "8003:8000"
+    environment:
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_DBNAME=${POSTGRES_DBNAME}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - GOOGLE_API=${GOOGLE_API}
+      - CACHE=${CACHE}
+    depends_on:
+      - postgres
+      - redis

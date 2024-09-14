@@ -20,6 +20,11 @@ Our project, Space XPlorer, is an innovative app allowing users to track space e
 ## Demo
 [![Watch the video](https://img.youtube.com/vi/qwHTPyj60SM/hqdefault.jpg)](https://www.youtube.com/watch?v=qwHTPyj60SM)
 
+## Design Patterns 
+To create clean and maintainable code, we used the following design patterns
+- Singleton
+- Facade
+- Adapter
 
 ## Team Members
 - Anthony Canzona
